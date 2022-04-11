@@ -37,6 +37,7 @@ body {
 .emp-payroll { color: #42515f; }
 
 *{ box-sizing: border-box;}
+
 /* UC2 */
 .form-content {
     min-height: calc(100% - 80px);
@@ -108,13 +109,14 @@ label {
     border-radius: 4px;
     resize: vertical;
 }
+
 /* UC 3 Setting profile button into middle */
 .profile-radio-content {
     display: flex;
     flex-direction: row;
 }
 
-.profile-radio-content > label {
+.profile-radio-content label {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,7 +127,20 @@ label {
     border-radius: 50%;
     margin-left: 12px;
 }
+
 /* UC5 */
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+  }
+
+  /* UC5 */
 select {
     padding: 12px;
     border: 1px solid #ccc;
@@ -209,4 +224,75 @@ select {
       flex-direction: column-reverse;
       align-items: flex-start;
     }
+  }
+/* UC7 */
+@media only screen and (max-width: 960px) {
+    .row-content {
+        display: block;
+        flex-direction: row;
+        margin-bottom: 10px;
+        align-items: center;
+        border: 0px solid green;
+    }
+    .profile 
+    {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 12px;
+    }
+    .cancelButton {
+      margin-left: 100px;
+    }
+    .form {
+      width: 100%;
+      padding: 44px 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .row-content {
+        display: block;
+        flex-direction: row;
+        margin-bottom: 10px;
+        align-items: center;
+        border: 0px solid green;
+    }
+    .form {
+      margin-top: 10px;
+      width: 100%;
+    }
+    .row {
+      flex-direction: column;
+    }
+    .uploadButton {
+      justify-content: flex-start;
+    }
+    .profile 
+    {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 12px;
+    }
+    .profile-radio-button {
+      flex-flow: wrap;
+    }
+    .submit-reset {
+      width: 100%;
+      display: inline-block;
+      flex-grow: 1;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      background-color: #82a70c;
+    }
+    .submitButton {
+      margin: 0;
+    }
+    .buttonParent {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    .cancelButton {
+        margin-left: 100px;
+      }
   }
